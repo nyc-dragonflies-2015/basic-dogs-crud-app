@@ -1,7 +1,7 @@
 <h1>omg, index for dogs we have <%= @count %> dogs</h1>
 
 <% @dogs.each do |dog| %>
-  <li><%= dog.name %></li>
+  <%= erb :'dogs/_dog', locals: {canine: dog}  %>
 <% end %>
 
 
