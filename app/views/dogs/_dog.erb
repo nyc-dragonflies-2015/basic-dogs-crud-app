@@ -1,1 +1,7 @@
-<li><%= canine.name %></li>
+<li>
+<%= canine.name %>
+<form action="/dogs/<%= canine.id %>" method="POST">
+  <input type="hidden" name="_method" id="" value="DELETE" />
+  <input type="submit" name="" id="" value="Delete this Canine" />
+</form>
+</li>
