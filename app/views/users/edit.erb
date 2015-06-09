@@ -1,0 +1,13 @@
+<form class='edit-form' action='/users/<%= user.id %>' method='post'>
+  <input type='hidden' name='_method' value='put' />
+  <input type='text' name='user[first_name]' value='<%=user.first_name %>' />
+  <input type='text' name='user[last_name]'  value='<%=user.last_name  %>'/>
+  <input type='number' name='user[age]' value='<%=user.age %>' />
+  <input type='email' name='user[email]'     value='<%=user.email %>'/>
+  <input type='submit' value = 'Edit User'/ >
+</form>
+
+<form class='delete-form' action='/users/<%= user.id %>' method='post'>
+  <input type='hidden' name='_method' value='delete' />
+  <input type='submit' value= 'Delete User' />
+</form>
